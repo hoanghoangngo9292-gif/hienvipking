@@ -14,13 +14,11 @@ body::after{content:'';position:fixed;inset:0;z-index:0;background-image:linear-
 .scan{position:fixed;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#00f5ff,transparent);opacity:.5;z-index:3;animation:scan 5s linear infinite}
 @keyframes scan{0%{top:-2px;opacity:0}4%{opacity:.5}96%{opacity:.5}100%{top:100%;opacity:0}}
 .wrap{position:relative;z-index:1;width:100%;max-width:460px}
-
-/* HEADER */
 .hdr{text-align:center;margin-bottom:28px}
 .chip{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(0,245,255,.3);background:rgba(0,245,255,.06);border-radius:4px;padding:5px 18px;font-size:.58rem;letter-spacing:4px;color:#00f5ff;margin-bottom:16px}
 .dot{width:7px;height:7px;background:#00ff88;border-radius:50%;box-shadow:0 0 10px #00ff88;animation:blink 1.4s ease-in-out infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
-.logo{font-family:‘Orbitron’,monospace;font-weight:900;font-size:2.7rem;letter-spacing:10px;background:linear-gradient(135deg,#fff 0%,#ffe566 35%,#ffaa00 60%,#fff 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shine 3s linear infinite;line-height:1}
+.logo{font-family:'Orbitron',monospace;font-weight:900;font-size:2.7rem;letter-spacing:10px;background:linear-gradient(135deg,#fff 0%,#ffe566 35%,#ffaa00 60%,#fff 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shine 3s linear infinite;line-height:1}
 @keyframes shine{0%{background-position:0% center}100%{background-position:200% center}}
 .sub{font-size:.55rem;letter-spacing:6px;color:rgba(255,255,255,.18);margin-top:8px}
 .tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
@@ -29,50 +27,43 @@ body::after{content:'';position:fixed;inset:0;z-index:0;background-image:linear-
 .tc{background:rgba(0,245,255,.08);border-color:rgba(0,245,255,.35);color:#00f5ff}
 .tp{background:rgba(255,45,120,.1);border-color:rgba(255,45,120,.4);color:#ff2d78}
 .tn{background:rgba(0,255,136,.08);border-color:rgba(0,255,136,.35);color:#00ff88}
-
-/* STATS */
 .stats{display:flex;gap:10px;margin-bottom:14px}
 .sbox{flex:1;background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.07);border-radius:6px;padding:14px 8px;text-align:center;position:relative;overflow:hidden}
-.sbox::before{content:’’;position:absolute;top:0;left:0;right:0;height:2px}
+.sbox::before{content:'';position:absolute;top:0;left:0;right:0;height:2px}
 .s1::before{background:linear-gradient(90deg,transparent,#ffd200,transparent)}
 .s2::before{background:linear-gradient(90deg,transparent,#00ff88,transparent)}
 .s3::before{background:linear-gradient(90deg,transparent,#ff2d78,transparent)}
-.sval{font-family:‘Orbitron’,monospace;font-size:1.5rem;font-weight:900;display:block;line-height:1;margin-bottom:5px}
+.sval{font-family:'Orbitron',monospace;font-size:1.5rem;font-weight:900;display:block;line-height:1;margin-bottom:5px}
 .s1 .sval{color:#ffd200;text-shadow:0 0 20px rgba(255,210,0,.6)}
 .s2 .sval{color:#00ff88;text-shadow:0 0 20px rgba(0,255,136,.6)}
 .s3 .sval{color:#ff2d78;text-shadow:0 0 20px rgba(255,45,120,.6)}
 .slbl{font-size:.5rem;letter-spacing:2px;color:rgba(255,255,255,.25)}
-
-/* CARD */
 .card{background:rgba(10,6,24,.82);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:22px 18px;margin-bottom:14px;position:relative;overflow:hidden;backdrop-filter:blur(20px);box-shadow:0 20px 60px rgba(0,0,0,.6)}
-.card::before{content:’’;position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#9b30ff,#00f5ff,#ff2d78,#ffd200);background-size:300% auto;animation:bar 4s linear infinite}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#9b30ff,#00f5ff,#ff2d78,#ffd200);background-size:300% auto;animation:bar 4s linear infinite}
 @keyframes bar{0%{background-position:0% center}100%{background-position:300% center}}
-.card::after{content:’’;position:absolute;inset:0;border-radius:8px;background:radial-gradient(ellipse at top left,rgba(155,48,255,.07),transparent 60%),radial-gradient(ellipse at bottom right,rgba(0,245,255,.05),transparent 60%);pointer-events:none}
+.card::after{content:'';position:absolute;inset:0;border-radius:8px;background:radial-gradient(ellipse at top left,rgba(155,48,255,.07),transparent 60%),radial-gradient(ellipse at bottom right,rgba(0,245,255,.05),transparent 60%);pointer-events:none}
 .chead{display:flex;align-items:center;gap:12px;margin-bottom:18px}
 .cico{width:42px;height:42px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
 .igreen{background:rgba(0,255,136,.12);border:1px solid rgba(0,255,136,.3);box-shadow:0 0 18px rgba(0,255,136,.12)}
 .ired{background:rgba(255,45,120,.15);border:1px solid rgba(255,45,120,.35);box-shadow:0 0 18px rgba(255,45,120,.15)}
 .icyan{background:rgba(0,245,255,.1);border:1px solid rgba(0,245,255,.28);box-shadow:0 0 18px rgba(0,245,255,.1)}
 .igold{background:rgba(255,210,0,.1);border:1px solid rgba(255,210,0,.3);box-shadow:0 0 18px rgba(255,210,0,.1)}
-.ctitle{font-family:‘Orbitron’,monospace;font-size:.72rem;font-weight:700;letter-spacing:4px;color:#fff}
+.ctitle{font-family:'Orbitron',monospace;font-size:.72rem;font-weight:700;letter-spacing:4px;color:#fff}
 .csub{font-size:.52rem;letter-spacing:3px;color:rgba(255,255,255,.28);margin-top:3px}
-
-/* FIELDS */
 .lbl{font-size:.55rem;letter-spacing:3px;color:rgba(255,255,255,.28);margin-bottom:8px;margin-top:14px;display:flex;align-items:center;gap:8px}
-.lbl::after{content:’’;flex:1;height:1px;background:linear-gradient(90deg,rgba(255,255,255,.08),transparent)}
+.lbl::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(255,255,255,.08),transparent)}
 .lbl:first-of-type{margin-top:0}
-input[type=text],select{width:100%;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.09);border-radius:5px;color:#00f5ff;font-family:‘Share Tech Mono’,monospace;font-size:.75rem;padding:12px 14px;outline:none;line-height:1.6;transition:all .2s;appearance:none;-webkit-appearance:none}
+input[type=text],select{width:100%;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.09);border-radius:5px;color:#00f5ff;font-family:'Share Tech Mono',monospace;font-size:.75rem;padding:12px 14px;outline:none;line-height:1.6;transition:all .2s;appearance:none;-webkit-appearance:none}
 input[type=text]::placeholder{color:rgba(255,255,255,.15)}
 input[type=text]:focus,select:focus{border-color:rgba(0,245,255,.4);background:rgba(0,40,55,.35);box-shadow:0 0 0 3px rgba(0,245,255,.07)}
 select{color:rgba(255,255,255,.7);cursor:pointer}
 select option{background:#0a0618;color:#fff}
 .sel-wrap{position:relative}
-.sel-wrap::after{content:‘▾’;position:absolute;right:14px;top:50%;transform:translateY(-50%);color:#00f5ff;pointer-events:none;font-size:.9rem}
-
+.sel-wrap::after{content:'▾';position:absolute;right:14px;top:50%;transform:translateY(-50%);color:#00f5ff;pointer-events:none;font-size:.9rem}
 .div{height:1px;background:linear-gradient(90deg,transparent,rgba(155,48,255,.35),rgba(0,245,255,.2),transparent);margin:16px 0}
 .brow{display:flex;gap:10px}
-.btn{flex:1;padding:14px 10px;border-radius:5px;font-family:‘Orbitron’,monospace;font-size:.6rem;font-weight:700;letter-spacing:3px;cursor:pointer;border:none;outline:none;position:relative;overflow:hidden;transition:all .2s;text-transform:uppercase}
-.btn::before{content:’’;position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);transition:left .4s}
+.btn{flex:1;padding:14px 10px;border-radius:5px;font-family:'Orbitron',monospace;font-size:.6rem;font-weight:700;letter-spacing:3px;cursor:pointer;border:none;outline:none;position:relative;overflow:hidden;transition:all .2s;text-transform:uppercase}
+.btn::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);transition:left .4s}
 .btn:hover::before{left:100%}
 .btn:active{transform:scale(.97)}
 .bmain{background:linear-gradient(135deg,#00ff88 0%,#00cc66 100%);color:#000;box-shadow:0 4px 24px rgba(0,255,136,.35);animation:gglow 3s ease-in-out infinite}
@@ -83,44 +74,40 @@ select option{background:#0a0618;color:#fff}
 .bpink:hover{background:rgba(255,45,120,.18);box-shadow:0 4px 20px rgba(255,45,120,.28);transform:translateY(-1px)}
 .bcyan{background:rgba(0,245,255,.08);border:1px solid rgba(0,245,255,.32);color:#00f5ff}
 .bcyan:hover{background:rgba(0,245,255,.15);box-shadow:0 4px 20px rgba(0,245,255,.22);transform:translateY(-1px)}
-.bgold{background:linear-gradient(135deg,#ffd200,#ffaa00);color:#000;box-shadow:0 4px 24px rgba(255,210,0,.35)}
-.bgold:hover{transform:translateY(-2px);box-shadow:0 8px 36px rgba(255,210,0,.55)}
-
-/* HWID LIST */
-.hwid-item{background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.07);border-radius:6px;padding:14px;margin-bottom:10px;position:relative;transition:border-color .2s}
+.hwid-item{background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.07);border-radius:6px;padding:14px;margin-bottom:10px;position:relative;transition:border-color .2s,opacity .3s,transform .3s}
 .hwid-item:hover{border-color:rgba(0,245,255,.2)}
+.hwid-item.removing{opacity:0;transform:translateX(30px)}
+.hwid-item.adding{animation:slideIn .3s ease}
+@keyframes slideIn{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
 .hwid-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
-.hwid-name{font-family:‘Orbitron’,monospace;font-size:.68rem;font-weight:700;color:#ffd200;letter-spacing:2px}
+.hwid-name{font-family:'Orbitron',monospace;font-size:.68rem;font-weight:700;color:#ffd200;letter-spacing:2px}
 .hwid-badge{display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:3px;font-size:.5rem;letter-spacing:2px;font-weight:700}
 .badge-active{background:rgba(0,255,136,.1);border:1px solid rgba(0,255,136,.35);color:#00ff88}
 .badge-expired{background:rgba(255,45,120,.1);border:1px solid rgba(255,45,120,.35);color:#ff2d78}
 .hwid-val{font-size:.6rem;color:rgba(0,245,255,.7);word-break:break-all;line-height:1.6;margin-bottom:8px}
 .hwid-meta{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px}
 .hwid-exp{font-size:.55rem;color:rgba(255,255,255,.3);display:flex;align-items:center;gap:5px}
-.del-btn{padding:5px 14px;border-radius:4px;background:rgba(255,45,120,.09);border:1px solid rgba(255,45,120,.35);color:#ff2d78;font-family:‘Share Tech Mono’,monospace;font-size:.6rem;cursor:pointer;transition:all .2s;letter-spacing:1px}
+.del-btn{padding:5px 14px;border-radius:4px;background:rgba(255,45,120,.09);border:1px solid rgba(255,45,120,.35);color:#ff2d78;font-family:'Share Tech Mono',monospace;font-size:.6rem;cursor:pointer;transition:all .2s;letter-spacing:1px}
 .del-btn:hover{background:rgba(255,45,120,.2);box-shadow:0 0 16px rgba(255,45,120,.25)}
+.del-btn:disabled{opacity:.4;cursor:not-allowed}
 .empty{text-align:center;padding:24px;color:rgba(255,255,255,.2);font-size:.65rem;letter-spacing:2px}
-
-/* LOG */
+.sync-indicator{display:inline-flex;align-items:center;gap:6px;font-size:.5rem;letter-spacing:2px;color:rgba(255,210,0,.6);margin-left:10px;opacity:0;transition:opacity .3s}
+.sync-indicator.visible{opacity:1}
 .logbox{background:rgba(0,0,0,.45);border:1px solid rgba(0,245,255,.1);border-radius:5px;padding:12px 14px;font-size:.63rem;line-height:2;color:rgba(255,255,255,.2);min-height:70px;overflow-y:auto;max-height:130px}
 .lok{color:#00ff88}.lerr{color:#ff2d78}.linfo{color:#00f5ff}.lwarn{color:#ffd200}
 .prm{color:rgba(0,245,255,.4);margin-right:6px}
 .cur{display:inline-block;width:6px;height:11px;background:#00f5ff;vertical-align:middle;animation:cur .9s step-end infinite;margin-left:3px;opacity:.7}
 @keyframes cur{0%,100%{opacity:.7}50%{opacity:0}}
-
-/* TOAST */
 #toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(80px);opacity:0;transition:all .4s cubic-bezier(.34,1.56,.64,1);border-radius:6px;padding:12px 22px;font-size:.82rem;font-weight:600;pointer-events:none;z-index:999;white-space:nowrap;backdrop-filter:blur(20px);border:1px solid}
 #toast.show{transform:translateX(-50%) translateY(0);opacity:1}
 #toast.ok{background:rgba(0,18,10,.93);border-color:rgba(0,255,136,.4);color:#00ff88;box-shadow:0 8px 28px rgba(0,255,136,.18)}
 #toast.err{background:rgba(24,0,10,.93);border-color:rgba(255,45,120,.4);color:#ff2d78;box-shadow:0 8px 28px rgba(255,45,120,.18)}
 #toast.warn{background:rgba(18,12,0,.93);border-color:rgba(255,210,0,.4);color:#ffd200;box-shadow:0 8px 28px rgba(255,210,0,.12)}
-.spin{display:inline-block;width:12px;height:12px;border:2px solid rgba(0,0,0,.25);border-top-color:#000;border-radius:50%;animation:rot .6s linear infinite;vertical-align:middle;margin-right:7px}
-.spin-w{border-top-color:#fff;border-color:rgba(255,255,255,.2)}
+.spin{display:inline-block;width:10px;height:10px;border:2px solid rgba(255,210,0,.2);border-top-color:#ffd200;border-radius:50%;animation:rot .6s linear infinite;vertical-align:middle;margin-right:5px}
 @keyframes rot{to{transform:rotate(360deg)}}
 .foot{text-align:center;margin-top:22px;font-size:.5rem;letter-spacing:4px;color:rgba(255,255,255,.08)}
 .foot b{color:rgba(255,210,0,.22)}
 </style>
-
 </head>
 <body>
 <div class="scan"></div>
@@ -138,15 +125,11 @@ select option{background:#0a0618;color:#fff}
     </div>
   </div>
 
-  <!-- STATS -->
-
   <div class="stats">
     <div class="sbox s1"><span class="sval" id="totalCount">–</span><span class="slbl">TOTAL HWID</span></div>
     <div class="sbox s2"><span class="sval" id="activeCount">–</span><span class="slbl">ACTIVE</span></div>
     <div class="sbox s3"><span class="sval" id="expCount">–</span><span class="slbl">EXPIRED</span></div>
   </div>
-
-  <!-- ADD CARD -->
 
   <div class="card">
     <div class="chead">
@@ -186,12 +169,13 @@ select option{background:#0a0618;color:#fff}
 
   </div>
 
-  <!-- LIST CARD -->
-
   <div class="card">
     <div class="chead">
       <div class="cico icyan">📋</div>
-      <div><div class="ctitle">DANH SÁCH HWID</div><div class="csub">TẤT CẢ USER TRONG DATABASE</div></div>
+      <div>
+        <div class="ctitle">DANH SÁCH HWID <span class="sync-indicator" id="syncIndicator"><span class="spin"></span>SYNCING...</span></div>
+        <div class="csub">TẤT CẢ USER TRONG DATABASE</div>
+      </div>
     </div>
     <div style="margin-bottom:12px">
       <input type="text" id="searchInput" placeholder="🔍 Tìm theo tên user hoặc HWID..." oninput="renderList()">
@@ -200,8 +184,6 @@ select option{background:#0a0618;color:#fff}
     <div class="div"></div>
     <button class="btn bcyan" style="width:100%" onclick="loadAll()">♻ &nbsp;RELOAD DANH SÁCH</button>
   </div>
-
-  <!-- LOG CARD -->
 
   <div class="card">
     <div class="chead">
@@ -221,9 +203,12 @@ select option{background:#0a0618;color:#fff}
 <script>
 const URL_ = "https://api.jsonbin.io/v3/b/69f70bdcaaba8821976677a0";
 const KEY_  = "$2a$10$3dZhQhscBbWpVvSlJLEfve1EAcLFMYAX/TAw06LndJOcKfOLQe2k2";
+
 let tT = null;
 let allHwids = [];
+let isSyncing = false; // khóa để tránh race condition
 
+// ─── LOG ───────────────────────────────────────────────
 function log(msg, type='linfo'){
   const p = document.getElementById('logPanel');
   const d = new Date();
@@ -243,6 +228,13 @@ function toast(msg, type='warn'){
   clearTimeout(tT); tT = setTimeout(()=> t.className='', 3500);
 }
 
+function setSyncing(val){
+  isSyncing = val;
+  const el = document.getElementById('syncIndicator');
+  if(el) el.classList.toggle('visible', val);
+}
+
+// ─── HELPERS ───────────────────────────────────────────
 function clearAdd(){
   document.getElementById('userName').value = '';
   document.getElementById('newHwid').value = '';
@@ -256,10 +248,10 @@ function isExpired(expDate){
 
 function formatDate(expDate){
   if(!expDate || expDate === 'forever') return '∞ Vĩnh viễn';
-  const d = new Date(expDate);
-  return d.toLocaleDateString('vi-VN');
+  return new Date(expDate).toLocaleDateString('vi-VN');
 }
 
+// ─── RENDER (instant, không đợi API) ───────────────────
 function renderList(){
   const search = document.getElementById('searchInput').value.toLowerCase().trim();
   const container = document.getElementById('hwidList');
@@ -274,21 +266,19 @@ function renderList(){
     return;
   }
 
-  container.innerHTML = filtered.map((e,i) => {
+  container.innerHTML = filtered.map(e => {
     const exp = isExpired(e.expDate);
-    const badgeClass = exp ? 'badge-expired' : 'badge-active';
-    const badgeText = exp ? 'EXPIRED' : 'ACTIVE';
     const realIdx = allHwids.indexOf(e);
     return `
-    <div class="hwid-item">
+    <div class="hwid-item" id="item-${realIdx}">
       <div class="hwid-top">
         <span class="hwid-name">👤 ${e.user || 'Unknown'}</span>
-        <span class="hwid-badge ${badgeClass}">● ${badgeText}</span>
+        <span class="hwid-badge ${exp ? 'badge-expired' : 'badge-active'}">● ${exp ? 'EXPIRED' : 'ACTIVE'}</span>
       </div>
       <div class="hwid-val">${e.hwid}</div>
       <div class="hwid-meta">
         <span class="hwid-exp">📅 ${formatDate(e.expDate)}</span>
-        <button class="del-btn" onclick="deleteHWID(${realIdx})">🗑️ XOÁ</button>
+        <button class="del-btn" id="delbtn-${realIdx}" onclick="deleteHWID(${realIdx})">🗑️ XOÁ</button>
       </div>
     </div>`;
   }).join('');
@@ -297,12 +287,30 @@ function renderList(){
 function updateStats(){
   const total = allHwids.length;
   const expired = allHwids.filter(e => isExpired(e.expDate)).length;
-  const active = total - expired;
   document.getElementById('totalCount').textContent = total;
-  document.getElementById('activeCount').textContent = active;
+  document.getElementById('activeCount').textContent = total - expired;
   document.getElementById('expCount').textContent = expired;
 }
 
+// ─── SYNC LÊN SERVER (chạy ngầm) ───────────────────────
+async function syncToServer(hwids, label){
+  setSyncing(true);
+  try{
+    const p = await fetch(URL_, {
+      method:'PUT',
+      headers:{'Content-Type':'application/json','X-Master-Key': KEY_},
+      body: JSON.stringify({hwids})
+    });
+    if(!p.ok) throw new Error('HTTP '+p.status);
+    log(label+' — sync server OK ✓', 'lok');
+  } catch(e){
+    log('⚠️ Sync thất bại: '+e.message+' — UI đã cập nhật, thử reload nếu cần.', 'lwarn');
+    toast('⚠️ Lưu server thất bại, hãy reload!','warn');
+  }
+  setSyncing(false);
+}
+
+// ─── LOAD ───────────────────────────────────────────────
 async function loadAll(){
   log('Đang tải dữ liệu từ server...', 'linfo');
   try{
@@ -315,9 +323,11 @@ async function loadAll(){
     log('Tải thành công — '+allHwids.length+' HWID trong database.', 'lok');
   } catch(e){
     log('Lỗi kết nối: '+e.message, 'lerr');
+    toast('❌ Không tải được dữ liệu!','err');
   }
 }
 
+// ─── THÊM HWID (optimistic: UI trước, sync sau) ─────────
 async function addHWID(){
   const user = document.getElementById('userName').value.trim();
   const hwid = document.getElementById('newHwid').value.trim();
@@ -326,79 +336,68 @@ async function addHWID(){
   if(!user){ toast('⚠️ Vui lòng nhập tên user!','warn'); return; }
   if(!hwid){ toast('⚠️ Vui lòng nhập HWID!','warn'); return; }
 
-  const btn = document.getElementById('btnAdd');
-  btn.disabled = true; btn.innerHTML = '<span class="spin"></span>ĐANG XỬ LÝ...';
-  log('Đang thêm HWID cho user: '+user+'...', 'linfo');
-
-  try{
-    const r = await fetch(URL_+'/latest', {headers:{'X-Master-Key': KEY_}});
-    if(!r.ok) throw new Error('Kết nối thất bại');
-    const d = await r.json();
-    const hwids = d.record?.hwids || [];
-
-    if(hwids.find(e => e.hwid === hwid)){
-      log('HWID đã tồn tại trong database!', 'lwarn');
-      toast('⚠️ HWID này đã tồn tại!','warn');
-      btn.disabled=false; btn.innerHTML='➕ &nbsp;THÊM HWID'; return;
-    }
-
-    let expDate = 'forever';
-    if(exp !== 'forever'){
-      const date = new Date();
-      date.setDate(date.getDate() + parseInt(exp));
-      expDate = date.toISOString().split('T')[0];
-    }
-
-    const newEntry = { user, hwid, expDate, addedAt: new Date().toISOString().split('T')[0] };
-    hwids.push(newEntry);
-
-    const p = await fetch(URL_, {
-      method:'PUT',
-      headers:{'Content-Type':'application/json','X-Master-Key': KEY_},
-      body: JSON.stringify({hwids})
-    });
-    if(!p.ok) throw new Error('Cập nhật thất bại');
-
-    allHwids = hwids;
-    updateStats();
-    renderList();
-    clearAdd();
-    log('Thêm thành công! User: '+user+' | Hạn: '+formatDate(expDate), 'lok');
-    toast('✅ Thêm thành công! User: '+user,'ok');
-  } catch(e){
-    log('Lỗi: '+e.message, 'lerr');
-    toast('❌ '+e.message,'err');
+  // Kiểm tra trùng ngay trên local
+  if(allHwids.find(e => e.hwid === hwid)){
+    log('HWID đã tồn tại trong database!', 'lwarn');
+    toast('⚠️ HWID này đã tồn tại!','warn');
+    return;
   }
-  btn.disabled=false; btn.innerHTML='➕ &nbsp;THÊM HWID';
+
+  let expDate = 'forever';
+  if(exp !== 'forever'){
+    const date = new Date();
+    date.setDate(date.getDate() + parseInt(exp));
+    expDate = date.toISOString().split('T')[0];
+  }
+
+  const newEntry = { user, hwid, expDate, addedAt: new Date().toISOString().split('T')[0] };
+
+  // ✅ CẬP NHẬT UI NGAY LẬP TỨC
+  allHwids.push(newEntry);
+  updateStats();
+  renderList();
+  clearAdd();
+  log('Đã thêm user: '+user+' | Hạn: '+formatDate(expDate), 'lok');
+  toast('✅ Thêm thành công! User: '+user,'ok');
+
+  // Highlight item vừa thêm
+  const newIdx = allHwids.length - 1;
+  setTimeout(()=>{
+    const el = document.getElementById('item-'+newIdx);
+    if(el) el.classList.add('adding');
+  }, 10);
+
+  // Sync lên server ngầm
+  syncToServer([...allHwids], 'Thêm user '+user);
 }
 
+// ─── XÓA HWID (optimistic: UI trước, sync sau) ──────────
 async function deleteHWID(idx){
-  if(!confirm('Xoá HWID của user: '+allHwids[idx].user+'?')) return;
-  log('Đang xoá HWID của: '+allHwids[idx].user+'...', 'linfo');
-  try{
-    const r = await fetch(URL_+'/latest', {headers:{'X-Master-Key': KEY_}});
-    if(!r.ok) throw new Error('Kết nối thất bại');
-    const d = await r.json();
-    let hwids = d.record?.hwids || [];
-    const target = allHwids[idx].hwid;
-    hwids = hwids.filter(e => e.hwid !== target);
+  const target = allHwids[idx];
+  if(!target) return;
+  if(!confirm('Xoá HWID của user: '+target.user+'?')) return;
 
-    const p = await fetch(URL_, {
-      method:'PUT',
-      headers:{'Content-Type':'application/json','X-Master-Key': KEY_},
-      body: JSON.stringify({hwids})
-    });
-    if(!p.ok) throw new Error('Cập nhật thất bại');
-
-    allHwids = hwids;
+  // ✅ XÓA KHỎI UI NGAY LẬP TỨC (animation rồi xóa)
+  const el = document.getElementById('item-'+idx);
+  if(el){
+    el.classList.add('removing');
+    setTimeout(()=>{
+      allHwids.splice(idx, 1);
+      updateStats();
+      renderList();
+    }, 280);
+  } else {
+    allHwids.splice(idx, 1);
     updateStats();
     renderList();
-    log('Xoá thành công! Database còn '+hwids.length+' HWID.', 'lok');
-    toast('✅ Xoá thành công!','ok');
-  } catch(e){
-    log('Lỗi: '+e.message, 'lerr');
-    toast('❌ '+e.message,'err');
   }
+
+  log('Đã xoá HWID của: '+target.user, 'lok');
+  toast('✅ Xoá thành công!','ok');
+
+  // Sync lên server ngầm
+  const snapshot = allHwids.filter(e => e.hwid !== target.hwid);
+  syncToServer(snapshot, 'Xoá user '+target.user);
 }
 
 window.addEventListener('load',()=>{
