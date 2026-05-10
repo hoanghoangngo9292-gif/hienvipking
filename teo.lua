@@ -1,3 +1,57 @@
 -- This file was protected using Hienios Obfuscator v16.6 [https://discord.gg/x9pATE8Uxe]
 
-return(function()local I,p,r,Y,F,k=string.byte,string.char,loadstring or load,string.gsub,{},string.pack;for q=0,255 do F[q]=p(q);end;F=tostring;local h={127,6,61,115,26,38,43,120,106,126,71,20,16,22,46,52,3,41,30};local m=19;local j={69,72,5,111,59,97,108,88,77,82};local n=10;local o=function(d)local l={};local g=0;for a=1,#d,5 do local B,b,c,e,f=I(d,a,a+4);local Q=((((B-33)*85+(b-33))*85+(c-33))*85+(e-33))*85+(f-33);local W=Q%256;Q=math.floor(Q/256);local v=Q%256;Q=math.floor(Q/256);local z=Q%256;Q=math.floor(Q/256);local B=Q%256;g=g+1;l[g]=p(B^h[((g-1)%m)+1]);g=g+1;l[g]=p(z^h[((g-1)%m)+1]);g=g+1;l[g]=p(v^h[((g-1)%m)+1]);g=g+1;l[g]=p(W^h[((g-1)%m)+1]);end;for q=1,2 do table.remove(l);end;return table.concat(l);end;local a=0;local d=Y("b}?\rX'\28d|\16k#7_\30[%\26\0\1ip9Rr%*3e\24yuwT\31E\17\4\24\0\11RV\11_2\9 vxq62\6V]a\16nt\0N;\29W=a+c\12 :ESKBpy\31m`F\4\18L[\20\16~-cFdI\"k\14 \0\12NL}V]b\12\15\5$^Ln!?\20\16k\6\3t\11\24EMo\25\22apTYc)P\0\12?i\n8P\23_8\2n\30\7\1\\ZaF^p/\12\5\5AN\15UW\15ibfa*0c]\25dngv,3Hl_1*/\7a<@H~'1{'\9frD\5^(\31\14~v\6-*#e%+0g:p<,\4\26V\31u\14qmR1SBK\20/>~\21\"=sX\"\22k\31n\23JL\\X_{\27|u*VDNK-6g?`y:*\3&22'axtmVaLW=(~z{S_rY\\ag0\rioVx$(i\190a'XWuV[6z6c\5)\2J'7a\6|\254/_@E5\26v}-Z%\nJ27%\16{l\\\29\12S$\27x~~(\\DXKS\31\30\21\rp\"Q\12\\3`p\24a\18X\29N(\3n\12spiN2sW:j\26h\n7Gr#\"\5\1\31j|-,vG]\27=m\2;w*PWH2|8\12W\7s\\:9\24\25kt!^}V\3\27\31j\6`0F`F&*j\19m`J/Q)7\5\8!{oFB\rP\8:(sy\0KAmY\8\3y9\12\6*\7\8M[w\15w\7{;[k]K0rby\18i \14$\242n\21zkA8\8Y>{/&\29mP\11I\8\r\7>fq;TKF$i\19\15m`[5c\\,+k\15\12u;8\11I^\16\25\11z\18\"ESR\12\12\65`\4]0\23PA\3i\15\1cqN\n",".",function(Q)a=a+1;return p(I(Q)^j[((a-1)%n)+1]);end);local s=(function()if _ENV then return _ENV elseif getfenv then return getfenv(0)end;return _G or{}end)();if not s["game"]then while true do task.wait(9e9)end end;local t=true;pcall(function()if debug and debug.getinfo then local _=debug.getinfo(1);if _ and _.what~="Lua"and _.what~="C"and _.what~="main"then t=false end end end);if not t then while true do end end;local w,x=r(o(d));assert(w,"Hienios decompression error: "..tostring(x).." (does your environment support load/loadstring?)");return w()end)()
+return(function()
+local I,p,r,Y=string.byte,string.char,loadstring or load,string.gsub;
+local c={119,117,91,71,14,79,108,71,49,11,16,102,46,10,97,103,116,92,122,125,19};
+local e={122,113,91,88,11,127,81,57,25};
+local f=21;
+local g=9;
+local q={};
+local Q="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()-+=[]{}|;:,.<";
+for v=1,#Q do q[I(Q,v)]=v-1 end;
+local y={66,8,2,47,42,41,34,120,124,27,16,98,3,56,66,48,91,94,18,29,9,25,78,83,0,93,115,17,33,107,31,46,58,33,122,81,56,23,45,123,59,38,106,86,123,79,91,99,37,62,72,120,8,32,86,57,99,0,58,66,102,16,66,33,4,62,21,125,4,5,9,41,86,32,96,110,46,94,34,114,33,89,67,49,27,110,49,127,99,95,35,90,14,104,114,41,57,0,43,20,57,35,53,32,27,2,118,48,72,58,62,8,50,56,101,105,52,34,92,21,20,126,90,107,117,77,43,66,62,25,83,70,100,118,110,62,93,118,5,81,48,122,80,73,16,67,8,23,86,68,19,72,114,54,0,31,22,76,3,26,14,112,46,26,3,8,74,2,101,28,76,71,90,12,108,91,71,16,94,100,40,67,42,109,47,70,6,124,109,94,59,11,97,80,38,6,105,77,62,82,12,29,79,9,61,126,67,58,75,20,111,42,89,120,80,78,80,74,48,17,89,91,29,92,96,77,21,15,49,39,44,39,78,86,53,59,9,59,103,61,21,105,50,83,50,26,10,104,85,59,9,32,6,42,40,104,126,34,38,10,72,18,1,3,107,67,58,96,0,106,66,70,104,104,37,27,122,83,112,91,69,22,24,120,77,19,105,111,65,16,29,5,45,53,97,99,45,62,82,45,14,121,61,43,114,122,23,9,108,63,89,90,6,77,37,76,18,49,63,88,41,24,31,32,16,32,62,101,65,86,30,115,118,95,50,21,41,99,84,15,88,111,49,44,10,25,40,10,7,96,94,29,9,28,8,91,73,32,29,61,55,12,47,115,92,72,120,74,68,10,57,31,36,121,14,97,108,34,1,34,12,28,38,54,8,8,72,46,67,49,29,32,71,34,95,90,51,26,97,6,58,75,5,69,89,45,1,42,33,112,79,97,20,104,66,54,99,31,50,20,102,121,98,72,6,12,113,59,84,45,117,111,57,16,61,12,115,76,19,13,33,27,32,35,47,111,53,114,125,32,61,26,51,49,97,62,3,85,125,25,67,46,60,68,39,99,73,77,67,58,109,19,60,21,57,12,90,46,12,50,26,69,28,5,91,95,25,61,118,35,63,69,50,118,98,46,66,45,41,119,73,57,120,123,72,59,42,104,68,49,19,97,50,45,6,1,6,74,84,45,122,50,87,64,46,105,61,36,23,119,77,20,65,10,111,81,26,19,77,111,72,62,103,114,69,26,60,119,92,20,18,108,104,92,46,9,125,60,35,92,30,5,32,71,123,117,34,50,73,29,21,38,11,39,120,76,74,44,122,20,64,46,53,72,101,42,57,40,28,67,26,54,97,126,18};
+local k={};
+for v=1,#y do
+k[v]=p((y[v]^e[((v-1)%g)+1])&255);
+end;
+local s=table.concat(k);
+local u={};
+local b=0;
+local v=1;
+while v<=#s do
+  local d,l,o,z,B=I(s,v,v+4);
+  local x=((((q[d]*85+q[l])*85+q[o])*85+q[z])*85+q[B]);
+  local a=x%256;x=math.floor(x/256);
+  local w=x%256;x=math.floor(x/256);
+  local U=x%256;x=math.floor(x/256);
+  local d=x%256;
+  b=b+1;u[b]=p((d^c[((b-1)%f)+1])&255);
+  b=b+1;u[b]=p((U^c[((b-1)%f)+1])&255);
+  b=b+1;u[b]=p((w^c[((b-1)%f)+1])&255);
+  b=b+1;u[b]=p((a^c[((b-1)%f)+1])&255);
+  v=v+5;
+end;
+for t=1,2 do table.remove(u) end;
+local F=table.concat(u);
+local h=(function()
+  if _ENV then return _ENV
+  elseif getfenv then return getfenv(0) end
+  return _G or {}
+end)();
+if not h["game"] then
+  while true do task.wait(9e9) end
+end;
+local j=true;
+pcall(function()
+  if debug and debug.getinfo then
+    local _=debug.getinfo(1)
+    if _ and _.what~="Lua" and _.what~="C" and _.what~="main" then
+      j=false
+    end
+  end
+end);
+if not j then while true do end end;
+local m,n=(r)(F);
+assert(m,"Hienios decompression error: "..tostring(n).." (does your environment support load/loadstring?)");
+return m()
+end)()
